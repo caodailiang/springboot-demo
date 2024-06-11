@@ -1,6 +1,8 @@
 package com.example.demo.model;
 
-public class TestModel {
+import java.io.Serializable;
+
+public class TestModel implements Serializable {
 
     protected Integer id;
 
