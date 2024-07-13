@@ -1,6 +1,6 @@
 package com.example.demo.mapper;
 
-import com.example.demo.model.TestModel;
+import com.example.demo.entity.TestEntity;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -9,8 +9,8 @@ import java.util.List;
 @Mapper
 public interface TestMapper {
 
-    TestModel getById(Integer id);
+    TestEntity getById(Integer id);
 
     @Select("SELECT * FROM test")
-    List<TestModel> findAll();
+    List<TestEntity> getAll();
 }

@@ -1,8 +1,8 @@
-package com.example.demo.model;
+package com.example.demo.entity;
 
 import java.io.Serializable;
 
-public class TestModel implements Serializable {
+public class TestEntity implements Serializable {
 
     protected Integer id;
 
