@@ -18,7 +18,7 @@ public class TestService {
     private TestMapper testMapper;
 
     @Autowired
-    private RedisTemplate redisTemplate;
+    private RedisTemplate<String, TestEntity> redisTemplate;
 
     private static final Logger logger = LogManager.getLogger(TestService.class);
 

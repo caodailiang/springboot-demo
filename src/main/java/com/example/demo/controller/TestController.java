@@ -21,13 +21,13 @@ public class TestController {
 
     private static final Logger logger = LogManager.getLogger(TestController.class);
 
-    @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/users/{id}", method = RequestMethod.GET)
     public TestEntity test(@PathVariable Integer id) {
         logger.info("get user by id:" + id);
         return testService.getById(id);
     }
 
-    @RequestMapping(value = "/getall", method = RequestMethod.GET)
+    @RequestMapping(value = "/users", method = RequestMethod.GET)
     public List<TestEntity> getAll() {
         logger.info("get all users");
         return testService.getAll();
